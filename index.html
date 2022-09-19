@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,600,700" />
 </head>
 <body>
+&nbsp; <!--this makes sure alignment with the nav block works correctly-->
 <div class="head">
     <div class="head-link">
         NATHANN.TECH
@@ -19,13 +20,21 @@
     </div>
     <div class="head-div"></div>
 </div>
+<div class="head-ending"></div>
 <div class="content">
     <h1>/portfolio</h1>
     <h3>Spycam <a href="https://spycambot.net">[website]</a></h3>
     <div class="accent-line"></div>
-    <div class="text">
-        Spycam is a <a href="https://discord.com">Discord</a> bot built using my own <a href="https://github.com/NathanNorth/Riot4J"> open source wrapper</a> of Riot Game's REST API to synthesize data from <a href="https://playvalorant.com">VALORANT</a> (a competitive first person shooter).
-    </div>
+    <p>
+        Spycam is a <a href="https://discord.com">Discord</a> bot built using my own <a href="https://github.com/NathanNorth/Riot4J"> open source wrapper</a> of Riot Games' REST API to synthesize data from <a href="https://playvalorant.com">VALORANT</a> (a competitive first person shooter).
+        For example, Spycam can send a notification in a text channel when a user completes a match, or help them track their current win-streak.
+        Spycam uses OAuth to authenticate with user's Riot Accounts and the backend runs on Google Cloud managed with Docker. Monitoring is done with self-hosted Grafana, Prometheus and Loki.
+    </p>
+    <img src="./img/spycam_profile.jpg" alt="Spycam Logo" class="graphic">
+    <div class="desc">A Spycam command that aggregates data from a player's match history.</div>
+    <p>
+        As the sole person behind this project I have prototyped the product, pitched/communicated with Riot Games for production API access, designed the server backend, implemented all code.
+    </p>
 </div>
 </body>
 </html>
