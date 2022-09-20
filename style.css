@@ -5,7 +5,10 @@ body {
     font-size: 2em;
     margin: 0;
 }
-a {
+a:link {
+    color: mediumpurple;
+}
+a:visited {
     color: rebeccapurple;
 }
 h3 {
@@ -27,6 +30,19 @@ p {
     padding: 5px;
     font-size: 0.75em;
     font-weight: bold;
+    text-decoration: none;
+}
+
+/* some overrides to make header links color correctly */
+.head-link:link {
+    color: white;
+}
+.head-link:visited {
+    color: white;
+}
+
+.head-link:hover {
+    color: mediumpurple;
 }
 .head-div {
     background-color: white;
