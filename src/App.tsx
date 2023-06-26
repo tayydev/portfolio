@@ -1,5 +1,5 @@
 import React from 'react';
-import {Stack, Typography} from "@mui/material";
+import {Link, Stack, Typography} from "@mui/material";
 import DrawArticle from "./DrawArticle";
 
 const ARTICLE_COUNT = 3
@@ -12,13 +12,10 @@ function App() {
 
     return (
         <Stack direction={'row'} justifyContent={'center'}>
-            <Stack direction={"column"} spacing={5} sx={{
+            <Stack direction={"column"} spacing={2} sx={{
                 maxWidth: '250mm',
                 margin: '1rem'
             }}>
-                <Typography variant={'h1'}>
-                    /portfolio
-                </Typography>
                 {indices.map(index =>
                     <DrawArticle key={index} target={'/md/' + index + '.md'}/>
                 )}

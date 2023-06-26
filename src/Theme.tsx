@@ -1,5 +1,5 @@
 import React, {ReactNode} from "react";
-import {createTheme, CssBaseline, Divider, Stack, ThemeProvider, Typography} from "@mui/material";
+import {createTheme, CssBaseline, Divider, Link, Stack, ThemeProvider, Typography} from "@mui/material";
 import "@fontsource/rubik"
 
 interface MarkdownProps {
@@ -7,11 +7,23 @@ interface MarkdownProps {
 }
 
 export const MD_OVERRIDES: MarkdownProps = {
-    h3: ({node, ...props}) =>
+    h3: ({node, ...props}) => (
         <Stack direction={"column"} spacing={2}>
             <Typography variant={'h3'} {...props}></Typography>
             <Divider/>
         </Stack>
+    ),
+    img: ({ node, alt, ...props }) => (
+        <Stack direction={'column'}>
+            <Stack direction={'row'} justifyContent="center">
+                <img style={{ maxWidth: '90%' }} {...props}/>
+            </Stack>
+            <Typography variant={'subtitle1'} textAlign={'center'} color={'dimgrey'}>{alt}</Typography>
+        </Stack>
+    ),
+    a: ({node, href, ...props}) => (
+        <Link href={href} {...props}></Link>
+    )
 }
 
 const theme = createTheme({
@@ -23,7 +35,7 @@ const theme = createTheme({
         },
         action: {
             active: 'rgb(102, 51, 153)',
-            selected: 'rgb(120, 80, 150)'
+            selected: 'rgb(120, 80, 150)',
         }
     },
     typography: {
@@ -38,9 +50,9 @@ const theme = createTheme({
             fontSize: '1.25em'
         },
         body1: {
-            fontSize: '2em',
+            fontSize: '1.5em',
+            lineHeight: '125%'
         },
-
     },
     components: {
         MuiDivider: {
@@ -50,7 +62,7 @@ const theme = createTheme({
                     height: '4px',
                 },
             },
-        },
+        }
         // Add more overrides as needed
     },
 })
