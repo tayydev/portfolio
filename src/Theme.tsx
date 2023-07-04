@@ -1,5 +1,5 @@
 import React, {ReactNode} from "react";
-import {createTheme, CssBaseline, Divider, Link, Stack, ThemeProvider, Typography} from "@mui/material";
+import {Box, createTheme, CssBaseline, Divider, Link, Stack, ThemeProvider, Typography} from "@mui/material";
 import "@fontsource/rubik"
 
 interface MarkdownProps {
@@ -23,7 +23,8 @@ export const MD_OVERRIDES: MarkdownProps = {
     ),
     a: ({node, href, ...props}) => (
         <Link href={href} {...props}></Link>
-    )
+    ),
+    p: (props) => <Box {...props}/>
 }
 
 const theme = createTheme({

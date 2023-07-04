@@ -1,14 +1,19 @@
-import React from 'react';
-import {Link, Stack, Typography} from "@mui/material";
+import React, {useEffect, useState} from 'react';
+import {Stack} from "@mui/material";
 import DrawArticle from "./DrawArticle";
 
-const ARTICLE_COUNT = 3
+const ARTICLE_LOC = "/md/index.json"
 
 function App() {
-    let indices: number[] = []
-    for(let i = 1; i <= ARTICLE_COUNT; i++) {
-        indices.push(i)
-    }
+    const [list, setList] = useState<string[]>([])
+
+    useEffect(() => {
+        fetch(ARTICLE_LOC)
+            .then(response => response.text())
+            .then(text => setList(JSON.parse(text)))
+    }, [])
+
+    console.log('list', list)
 
     return (
         <Stack direction={'row'} justifyContent={'center'}>
@@ -16,8 +21,8 @@ function App() {
                 maxWidth: '250mm',
                 margin: '1rem'
             }}>
-                {indices.map(index =>
-                    <DrawArticle key={index} target={'/md/' + index + '.md'}/>
+                {list.map(addr =>
+                    <DrawArticle key={addr} target={addr}/>
                 )}
             </Stack>
         </Stack>

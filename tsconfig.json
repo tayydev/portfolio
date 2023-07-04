@@ -22,5 +22,8 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "scripts": {
+    "prebuild": "node -r ts-node/register /prebuild/ArticleIndexer.ts"
+  }
 }
