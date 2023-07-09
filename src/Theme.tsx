@@ -42,8 +42,13 @@ const theme = createTheme({
     typography: {
         fontFamily: 'Rubik',
         h1: {
+            fontWeight: 900,
+            fontSize: '3.5em'
+        },
+        h2: {
+            fontFamily: 'sans-serif',
             fontWeight: '900',
-            fontSize: '2.5em'
+            fontSize: '1.75em'
         },
         h3: {
             fontFamily: 'sans-serif',
