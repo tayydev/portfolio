@@ -1,32 +1,37 @@
 import {Box, Stack, Typography} from "@mui/material";
 
 export default function LandingPage() {
-    return <Box
+    return <Stack direction={'column'} justifyContent={'center'}
         sx={{
-            height: 'min(100vh, 200vw)',
+            minHeight: '85vh',
             backgroundColor: 'rgb(70, 30, 100)',
             color: 'white',
         }}>
-        <Stack direction={'column'} spacing={2} sx={{
-            marginTop: 'min(30vh, 30vw)',
-            marginBottom: 'auto',
-            marginLeft: '5rem'
-            // position: 'absolute',
-            // left: '25%',
-            // top: '25%'
+        <Stack direction={'row'} justifyContent={'center'} alignItems={'center'} sx={{
+            transform: 'skewY(-5deg)',
+            backgroundColor: 'rgb(139,106,199)',
+            width: '100%',
+            paddingY: '5%',
+            zIndex: '99'
         }}>
-            <Typography variant={'h1'}>
-                Hey, my name is Ethan
-            </Typography>
-            <Typography variant={'body1'}>
-                I'm a motivated software engineer studying at the College of William & Mary
-            </Typography>
-            <Stack direction={'row'} spacing={2} justifyItems={'center'}>
-                <Icon src={'/icons/github-mark-white.svg'} href={'https://github.com/tayydev'}/>
-                <Icon src={'/icons/linkedin.svg'} href={'https://linkedin.com/in/southethan1'}/>
+            <Stack direction={'column'} spacing={2} sx={{
+                transform: 'skewY(5deg)',
+                maxWidth: '250mm',
+                padding: '1rem'
+            }}>
+                <Typography variant={'h1'}>
+                    Hey, my name is Ethan
+                </Typography>
+                <Typography variant={'body1'}>
+                    I'm a motivated software engineer studying at the College of William & Mary
+                </Typography>
+                <Stack direction={'row'} spacing={2} justifyItems={'center'}>
+                    <Icon src={'/icons/github-mark-white.svg'} href={'https://github.com/tayydev'}/>
+                    <Icon src={'/icons/linkedin.svg'} href={'https://linkedin.com/in/southethan1'}/>
+                </Stack>
             </Stack>
         </Stack>
-    </Box>
+    </Stack>
 }
 
 interface IconProps {

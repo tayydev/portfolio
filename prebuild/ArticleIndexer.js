@@ -1,4 +1,4 @@
-//garbage compile time script
+//yucky js compile time script
 const fs = require("fs");
 const path = require("path");
 

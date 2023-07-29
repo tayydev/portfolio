@@ -43,7 +43,7 @@ const theme = createTheme({
         fontFamily: 'Rubik',
         h1: {
             fontWeight: 900,
-            fontSize: '3.5em'
+            fontSize: 'min(3em, 10vw)',
         },
         h2: {
             fontFamily: 'sans-serif',
@@ -56,7 +56,7 @@ const theme = createTheme({
             fontSize: '1.25em'
         },
         body1: {
-            fontSize: '1.5em',
+            fontSize: 'min(1.5em, 7vw)',
             lineHeight: '125%'
         },
     },
