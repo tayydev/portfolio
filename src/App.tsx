@@ -1,19 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Box, Stack, Typography} from "@mui/material";
 import DrawArticle from "./DrawArticle";
 import LandingPage from "./LandingPage";
 
-const ARTICLE_LOC = "/md/index.json"
+interface AppProps {
+    articles: string[]
+}
 
-function App() {
-    const [list, setList] = useState<string[]>([])
-
-    useEffect(() => {
-        fetch(ARTICLE_LOC)
-            .then(response => response.text())
-            .then(text => setList(JSON.parse(text)))
-    }, [])
-
+function App(props: AppProps) {
     return (
         <Stack direction={'column'} sx={{backgroundColor: 'rgb(228,221,239)'}}>
             <LandingPage/>
@@ -60,11 +54,16 @@ function App() {
                         <Typography variant={'h3'} sx={{fontSize: 'min(2.5em, 12vw)'}}>
                             Portfolio
                         </Typography>
-                        {list.map(addr =>
-                            <DrawArticle key={addr} target={addr}/>
+                        {props.articles.map((article, index) =>
+                            <DrawArticle key={index} content={article}/>
                         )}
                     </Stack>
                 </Stack>
+            </Stack>
+            <Stack direction={'column'} sx={{backgroundColor: 'rgb(228,221,239)'}}>
+                <Typography variant={'h5'} textAlign={'center'} sx={{paddingBottom: '1rem'}}>
+                    Copyright © 2023 Ethan South
+                </Typography>
             </Stack>
         </Stack>
     )

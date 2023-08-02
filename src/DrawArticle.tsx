@@ -1,23 +1,16 @@
 import React, {useEffect, useState} from "react";
 import ReactMarkdown from "react-markdown";
 import {MD_OVERRIDES} from "./Theme";
+import rehypeRaw from "rehype-raw";
 
 interface DrawArticleProps {
-    target: string
+    content: string
 }
 
 export default function DrawArticle(props: DrawArticleProps) {
-    const [content, setContent] = useState('')
-
-    useEffect(() => {
-        fetch(props.target)
-            .then(response => response.text())
-            .then(text => setContent(text))
-    }, [])
-
     return (
-        <ReactMarkdown components={MD_OVERRIDES}>
-            {content}
+        <ReactMarkdown components={MD_OVERRIDES} rehypePlugins={[rehypeRaw]}>
+            {props.content}
         </ReactMarkdown>
     );
 }

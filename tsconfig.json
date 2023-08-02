@@ -18,12 +18,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
     "src"
   ],
   "scripts": {
     "prebuild": "node -r ts-node/register /prebuild/ArticleIndexer.ts"
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }

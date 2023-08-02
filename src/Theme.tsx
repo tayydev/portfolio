@@ -13,6 +13,9 @@ export const MD_OVERRIDES: MarkdownProps = {
             <Divider/>
         </Stack>
     ),
+    h2: ({node, ...props}) => ( //this is goofy because h2 is the caption and h3 is the header TODO spin around
+        <Typography variant={'subtitle1'} textAlign={'center'} color={'dimgrey'} {...props}/>
+    ),
     img: ({ node, alt, ...props }) => (
         <Stack direction={'column'}>
             <Stack direction={'row'} justifyContent="center">
