@@ -51,7 +51,9 @@ function App(props: AppProps) {
                         maxWidth: '250mm',
                         padding: '1rem',
                     }}>
-                        <Typography variant={'h3'} sx={{fontSize: 'min(2.5em, 12vw)'}}>
+                        <Typography variant={'h3'} sx={{
+                            fontSize: 'min(2.5em, 12vw)'
+                        }}>
                             Portfolio
                         </Typography>
                         {props.articles.map((article, index) =>
