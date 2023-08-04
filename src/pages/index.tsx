@@ -5,6 +5,8 @@ import {GetStaticProps} from "next";
 import fs from "fs";
 import path from "path";
 
+import '@fontsource/rubik';
+
 interface IndexProps {
     articles: string[]
 }

@@ -1,6 +1,6 @@
 import React, {ReactNode} from "react";
 import {Box, createTheme, CssBaseline, Divider, Link, Stack, ThemeProvider, Typography} from "@mui/material";
-import "@fontsource/rubik"
+// import "@fontsource/rubik"
 
 interface MarkdownProps {
     [key: string]: React.ElementType;
