@@ -3,6 +3,8 @@ import {Box, Stack, Typography} from "@mui/material";
 import DrawArticle from "./DrawArticle";
 import LandingPage from "./LandingPage";
 
+import '@fontsource/rubik/';
+
 interface AppProps {
     articles: string[]
 }
