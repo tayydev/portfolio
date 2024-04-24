@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import ReactMarkdown from "react-markdown";
-import {MD_OVERRIDES} from "./Theme";
+import { MD_OVERRIDES } from "./Theme";
 import rehypeRaw from "rehype-raw";
 
 interface DrawArticleProps {
-    content: string
+    content: string;
 }
 
 export default function DrawArticle(props: DrawArticleProps) {
