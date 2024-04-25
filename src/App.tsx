@@ -48,15 +48,15 @@ function App(props: AppProps) {
                             }}
                         >
                             {"Check out what I've been working on"}
-                            <Image
+                            <img
                                 src={"/icons/squiggle2.svg"}
                                 alt={"A downward facing squiggle"}
                                 style={{
                                     position: "relative",
                                     bottom: "-0.5rem",
                                     marginLeft: "0.5rem",
-                                    height: "33rem",
                                 }}
+                                width={"33rem"}
                             />
                         </Typography>
                     </Box>

@@ -70,11 +70,7 @@ interface IconProps {
 function Icon(props: IconProps) {
     return (
         <a href={props.href}>
-            <Image
-                src={props.src}
-                alt={props.alt ?? ""}
-                style={{ height: "50rem" }}
-            />
+            <img src={props.src} alt={props.alt ?? ""} width={"50rem"} />
         </a>
     );
 }

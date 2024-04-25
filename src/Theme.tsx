@@ -36,7 +36,7 @@ export const MD_OVERRIDES: MarkdownProps = {
     img: ({ node, alt, ...props }) => (
         <Stack direction={"column"}>
             <Stack direction={"row"} justifyContent="center">
-                <Image style={{ maxWidth: "90%" }} {...props} alt={alt} />
+                <img style={{ maxWidth: "90%" }} {...props} alt={alt} />
             </Stack>
             <Typography
                 variant={"subtitle1"}
