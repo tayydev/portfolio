@@ -11,7 +11,7 @@
         <div class="hero-container">
             <HeroText>TAYLOR<br>SOUTH</HeroText>
             <HeroPolaroid/>
-            <div class="image-wrapper">
+            <div class="palette-wrapper">
                 <img class="hero-img" src={hero} alt="taylor at a beach"/>
                 <Palette/>
             </div>
@@ -31,7 +31,7 @@
     .hero-container {
         display: block;
     }
-    .image-wrapper {
+    .palette-wrapper {
         position: relative;
         margin-left: var(--image-start);
         width: fit-content;
