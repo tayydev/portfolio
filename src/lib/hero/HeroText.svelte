@@ -11,18 +11,20 @@
 
   .split-text {
     position: absolute;
-    top: 50%;
-    left: 0;
     transform: translateY(10px);
     z-index: 1;
+
+    font-family: "Anton", sans-serif;
+    font-size: 144px;
+    line-height: 1.2;
 
     /* Split effect: black before image starts, white over image */
     background: linear-gradient(
             to right,
-            black 0%,
-            black var(--image-start),
-            white var(--image-start),
-            white 100%
+            var(--color-terminal-grey) 0%,
+            var(--color-terminal-grey) var(--image-start),
+            var(--color-pale-tan) var(--image-start),
+            var(--color-pale-tan) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;

@@ -3,5 +3,11 @@
     import Hero from "$lib/hero/Hero.svelte";
 </script>
 
-<!--<Pallete/>-->
+<div class="spacer"></div>
 <Hero/>
+
+<style>
+    .spacer {
+        height: 32px;
+    }
+</style>

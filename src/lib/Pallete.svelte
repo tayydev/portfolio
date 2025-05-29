@@ -8,16 +8,21 @@
 
 <style>
     .reset {
-        background: black;
+        background: var(--color-terminal-grey);
         width: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.25rem;
-        padding: 0.25rem;
+        gap: 4px;
+        padding: 4px;
+
+        position: absolute;
+        z-index: 1;
+
+        margin-left: auto;
     }
     .square {
-        width: 2rem;
-        height: 2rem;
+        width: 28px;
+        height: 28px;
     }
 </style>

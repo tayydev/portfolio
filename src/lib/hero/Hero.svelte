@@ -3,14 +3,16 @@
     import hero from "./hero_reduced.webp"
     import Center from "$lib/Center.svelte";
     import HeroText from "$lib/hero/HeroText.svelte";
+    import HeroPolaroid from "$lib/hero/HeroPolaroid.svelte";
 </script>
 
 <main>
     <Center>
         <div class="hero-container">
-            <Palette/>
             <HeroText>TAYLOR<br>SOUTH</HeroText>
+            <HeroPolaroid/>
             <img class="hero-img" src={hero} alt="taylor at a beach"/>
+            <Palette/>
         </div>
     </Center>
     <HeroText/>
@@ -21,13 +23,10 @@
         --image-start: 100px;
     }
     .hero-img {
-        max-width: 768px;
+        max-width: 900px;
         margin-left: var(--image-start);
     }
     .hero-container {
         display: block;
-        font-family: "Anton", sans-serif;
-        font-size: 144px;
-        line-height: 1.2;
     }
 </style>
