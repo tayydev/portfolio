@@ -5,10 +5,7 @@
         </div>
         <div class="description">
             <div class="flex">
-                Cannon R8 <div class="expand"/> RF24-105mm F4
-            </div>
-            <div class="flex">
-                ISO 1600 <div class="expand"/> 61mm <div class="expand"/> f8 <div class="expand"/> 4.0s
+                IMG_5895cr3 <div class="expand"/> ISO 1600 <div class="expand"/> F8 <div class="expand"/> 4 SeC
             </div>
         </div>
     </div>
@@ -33,10 +30,10 @@
         border: solid 1px var(--color-pale-tan);
         width: var(--polaroid-width);
         background: var(--color-terminal-grey);
-        color: var(--color-film-orange);
-        padding-left: 2px;
-        padding-right: 2px;
+        color: var(--color-pale-tan);
+        padding: 2px;
 
+        font-family: '7Segment', monospace;
         font-size: 12px;
     }
     .flex {

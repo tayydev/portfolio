@@ -16,13 +16,9 @@
         gap: 4px;
         padding: 4px;
         z-index: 1;
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
     }
     .square {
-        width: 20px;
-        height: 20px;
+        width: 12px;
+        height: 12px;
     }
 </style>

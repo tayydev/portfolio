@@ -1,5 +1,4 @@
 <script>
-    import Palette from "$lib/Pallete.svelte";
     import hero from "./hero_reduced.webp"
     import Center from "$lib/Center.svelte";
     import HeroText from "$lib/hero/HeroText.svelte";
@@ -13,10 +12,7 @@
             <HeroText>TAYLOR<br>SOUTH</HeroText>
             <HeroPolaroid/>
             <HeroCaption/>
-            <div class="palette-wrapper">
-                <img class="hero-img" src={hero} alt="taylor at a beach"/>
-                <Palette/>
-            </div>
+            <img class="hero-img" src={hero} alt="taylor at a beach"/>
         </div>
     </Center>
 </main>
@@ -28,13 +24,9 @@
     .hero-img {
         max-width: 900px;
         display: block;
+        margin-left: var(--image-start);
     }
     .hero-container {
         display: block;
-    }
-    .palette-wrapper {
-        position: relative;
-        margin-left: var(--image-start);
-        width: fit-content;
     }
 </style>
