@@ -11,8 +11,10 @@
         <div class="hero-container">
             <HeroText>TAYLOR<br>SOUTH</HeroText>
             <HeroPolaroid/>
-            <img class="hero-img" src={hero} alt="taylor at a beach"/>
-            <Palette/>
+            <div class="image-wrapper">
+                <img class="hero-img" src={hero} alt="taylor at a beach"/>
+                <Palette/>
+            </div>
         </div>
     </Center>
     <HeroText/>
@@ -24,10 +26,14 @@
     }
     .hero-img {
         max-width: 900px;
-        margin-left: var(--image-start);
+        display: block;
     }
     .hero-container {
-        position: relative;
         display: block;
+    }
+    .image-wrapper {
+        position: relative;
+        margin-left: var(--image-start);
+        width: fit-content;
     }
 </style>

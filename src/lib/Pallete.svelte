@@ -18,7 +18,7 @@
         z-index: 1;
 
         position: absolute;
-        bottom: 4px;
+        bottom: 0;
         right: 0;
     }
     .square {
