@@ -33,9 +33,11 @@
         border: solid 1px var(--color-pale-tan);
         width: var(--polaroid-width);
         background: var(--color-terminal-grey);
-        color: var(--color-pale-tan);
+        color: var(--color-film-orange);
         padding-left: 2px;
         padding-right: 2px;
+
+        font-size: 12px;
     }
     .flex {
         display: flex;
