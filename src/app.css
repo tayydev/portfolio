@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+:root {
+    font-family: 'Fira Mono', monospace;
+
+    --color-pale-tan: #fcd6c5;
+    --color-pale-green: #e5fbe5;
+    --color-link-green: #529c4b;
+    --color-terminal-grey: #151915;
+
+    margin: 0;
+
+    background-color: var(--color-pale-tan);
+}
+
+/* Resets (https://www.digitalocean.com/community/tutorials/css-minimal-css-reset): */
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -20,12 +37,4 @@ ol, ul {
 img {
     max-width: 100%;
     height: auto;
-}
-
-:root {
-    --color-pale-tan: #fcd6c5;
-    --color-pale-green: #e5fbe5;
-    --color-link-green: #529c4b;
-
-    margin: 0;
 }

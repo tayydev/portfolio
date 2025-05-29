@@ -1,8 +1,7 @@
 <script>
     import Pallete from "$lib/Pallete.svelte";
+    import Hero from "$lib/hero/Hero.svelte";
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
-<Pallete/>
+<!--<Pallete/>-->
+<Hero/>
