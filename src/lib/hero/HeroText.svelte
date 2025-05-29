@@ -11,12 +11,12 @@
 
   .split-text {
     position: absolute;
-    transform: translateY(10px);
+    transform: translateY(20px);
     z-index: 1;
 
     font-family: "Anton", sans-serif;
     font-size: 144px;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: 9px;
     text-align: right;
 

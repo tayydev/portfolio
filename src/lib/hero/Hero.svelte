@@ -4,6 +4,7 @@
     import Center from "$lib/Center.svelte";
     import HeroText from "$lib/hero/HeroText.svelte";
     import HeroPolaroid from "$lib/hero/HeroPolaroid.svelte";
+    import HeroCaption from "$lib/hero/HeroCaption.svelte";
 </script>
 
 <main>
@@ -11,13 +12,13 @@
         <div class="hero-container">
             <HeroText>TAYLOR<br>SOUTH</HeroText>
             <HeroPolaroid/>
+            <HeroCaption/>
             <div class="palette-wrapper">
                 <img class="hero-img" src={hero} alt="taylor at a beach"/>
                 <Palette/>
             </div>
         </div>
     </Center>
-    <HeroText/>
 </main>
 
 <style>

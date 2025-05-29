@@ -5,7 +5,7 @@
         </div>
         <div class="description">
             <div class="flex">
-                Cannon EOS R8 <div class="expand"/> RF24-105mm F4
+                Cannon R8 <div class="expand"/> RF24-105mm F4
             </div>
             <div class="flex">
                 ISO 1600 <div class="expand"/> 61mm <div class="expand"/> f8 <div class="expand"/> 4.0s
@@ -16,11 +16,11 @@
 
 <style>
     :root {
-        --polaroid-width: 300px
+        --polaroid-width: 265px
     }
     .polaroid {
         position: absolute;
-        transform: translate(566px, 55px);
+        transform: translate(600px, 55px);
         z-index: 1;
     }
     .window {
