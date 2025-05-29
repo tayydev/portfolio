@@ -15,14 +15,14 @@
         align-items: center;
         gap: 4px;
         padding: 4px;
-
-        position: absolute;
         z-index: 1;
 
-        margin-left: auto;
+        position: absolute;
+        bottom: 4px;
+        right: 0;
     }
     .square {
-        width: 28px;
-        height: 28px;
+        width: 20px;
+        height: 20px;
     }
 </style>

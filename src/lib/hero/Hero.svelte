@@ -27,6 +27,7 @@
         margin-left: var(--image-start);
     }
     .hero-container {
+        position: relative;
         display: block;
     }
 </style>
