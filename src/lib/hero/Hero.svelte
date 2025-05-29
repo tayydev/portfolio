@@ -9,8 +9,7 @@
 <main>
     <Center>
         <div class="hero-container">
-            <HeroText>TAYLOR</HeroText>
-            <HeroText><br>SOUTH</HeroText>
+            <HeroText>TAYLOR<br>SOUTH</HeroText>
             <HeroPolaroid/>
             <div class="palette-wrapper">
                 <img class="hero-img" src={hero} alt="taylor at a beach"/>
@@ -23,7 +22,7 @@
 
 <style>
     :root {
-        --image-start: 102px;
+        --image-start: 28px;
     }
     .hero-img {
         max-width: 900px;

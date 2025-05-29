@@ -17,6 +17,8 @@
     font-family: "Anton", sans-serif;
     font-size: 144px;
     line-height: 1.2;
+    letter-spacing: 9px;
+    text-align: right;
 
     /* Split effect: black before image starts, white over image */
     background: linear-gradient(

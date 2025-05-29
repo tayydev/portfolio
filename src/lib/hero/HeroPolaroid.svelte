@@ -20,7 +20,7 @@
     }
     .polaroid {
         position: absolute;
-        transform: translate(640px, 55px);
+        transform: translate(566px, 55px);
         z-index: 1;
     }
     .window {
