@@ -1,6 +1,6 @@
 <script>
     import Palette from "$lib/Pallete.svelte";
-    import hero from "./hero_reduced_3x2.webp"
+    import hero from "./hero_reduced.webp"
     import Center from "$lib/Center.svelte";
     import HeroText from "$lib/hero/HeroText.svelte";
     import HeroPolaroid from "$lib/hero/HeroPolaroid.svelte";
@@ -9,7 +9,7 @@
 <main>
     <Center>
         <div class="hero-container">
-            <HeroText style="--image-start: 200px">TAYLOR</HeroText>
+            <HeroText>TAYLOR</HeroText>
             <HeroText><br>SOUTH</HeroText>
             <HeroPolaroid/>
             <div class="palette-wrapper">
@@ -23,7 +23,7 @@
 
 <style>
     :root {
-        --image-start: 100px;
+        --image-start: 102px;
     }
     .hero-img {
         max-width: 900px;
