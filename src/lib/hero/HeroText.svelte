@@ -10,10 +10,6 @@
   }
 
   .split-text {
-    position: absolute;
-    transform: translateY(20px);
-    z-index: 1;
-
     font-family: "Anton", sans-serif;
     font-size: 144px;
     line-height: 1.1;

@@ -4,14 +4,18 @@
     import HeroText from "$lib/hero/HeroText.svelte";
     import HeroPolaroid from "$lib/hero/HeroPolaroid.svelte";
     import HeroCaption from "$lib/hero/HeroCaption.svelte";
+    import HeroExternal from "$lib/hero/HeroExternal.svelte";
 </script>
 
 <main>
     <Center>
         <div class="hero-container">
-            <HeroText>TAYLOR<br>SOUTH</HeroText>
+            <div class="hero-overlay-container">
+                <HeroText>TAYLOR<br>SOUTH</HeroText>
+                <HeroCaption/>
+                <HeroExternal/>
+            </div>
             <HeroPolaroid/>
-            <HeroCaption/>
             <img class="hero-img" src={hero} alt="taylor at a beach"/>
         </div>
     </Center>
@@ -28,5 +32,10 @@
     }
     .hero-container {
         display: block;
+    }
+    .hero-overlay-container {
+        position: absolute;
+        transform: translate(0px, 20px);
+        z-index: 1;
     }
 </style>
