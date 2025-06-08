@@ -20,6 +20,7 @@
         width: fit-content;
         z-index: 1;
         text-align: right;
+        margin-right: 16px;
 
         font-size: 24px;
         font-weight: bold;
@@ -40,7 +41,7 @@
 
     .bg {
         position: absolute;
-        transform: translate(191px, 0px);
+        transform: translate(175px, 0px);
         z-index: -1;
 
         font-size: 24px;
