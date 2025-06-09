@@ -12,7 +12,7 @@
 
     .image-text-container {
         position: relative;
-        margin-top: 20px    ;
+        margin-top: 20px;
     }
 
     .caption {

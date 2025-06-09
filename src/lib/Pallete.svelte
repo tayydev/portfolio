@@ -18,7 +18,7 @@
         z-index: 1;
     }
     .square {
-        width: 12px;
-        height: 12px;
+        width: 47px;
+        height: 47px;
     }
 </style>

@@ -28,14 +28,13 @@
     .hero-img {
         max-width: 900px;
         display: block;
-        margin-left: var(--image-start);
     }
     .hero-container {
         display: block;
     }
     .hero-overlay-container {
         position: absolute;
-        transform: translate(0px, 20px);
+        transform: translate(-28px, 20px);
         z-index: 1;
     }
 </style>

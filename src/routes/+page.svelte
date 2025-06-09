@@ -1,10 +1,13 @@
 <script>
     import Pallete from "$lib/Pallete.svelte";
     import Hero from "$lib/hero/Hero.svelte";
+    import About from "$lib/about/About.svelte";
 </script>
 
-<div class="spacer"></div>
+<div class="spacer"/>
 <Hero/>
+<div class="spacer"/>
+<About/>
 
 <style>
     .spacer {
