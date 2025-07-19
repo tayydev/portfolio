@@ -15,43 +15,30 @@
 
 <style>
     :root {
-        --about-title-start: 15.4px;
+        --about-title-start: 0px;
     }
 
     .title-text {
         position: absolute;
-        transform: translate(calc(-0 * var(--about-title-start)), -4px);
+        transform: translate(0px, -1.5px);
 
-        font-family: "Anton", sans-serif;
+        padding-left: 16px;
+
+        font-family: "AntonCrop", sans-serif;
         line-height: 1.0;
-        letter-spacing: 0;
-        font-size: 64px;
-        margin: 0;
-        padding-top: 0;
-
-        background: linear-gradient(
-                to right,
-                var(--color-terminal-grey) 0%,
-                var(--color-terminal-grey) var(--about-title-start),
-                var(--color-pale-tan) var(--about-title-start),
-                var(--color-pale-tan) 100%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-size: 57px; /* Two pixels taller than container */
         text-align: right;
         z-index: 2;
+        color: var(--color-pale-tan);
     }
 
     .bg {
         background: var(--color-terminal-grey);
         height: 55px;
         width: calc(var(--about-width) - var(--about-title-start));
-        margin-left: var(--about-title-start);
-        /*margin: 0;*/
         display: flex;
     }
-    
+
     .about-container {
         position: relative;
     }
