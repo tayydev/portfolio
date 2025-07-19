@@ -6,11 +6,14 @@
 
 <div class="spacer"/>
 <Hero/>
-<div class="spacer"/>
+<div class="big-spacer"/>
 <About/>
 
 <style>
     .spacer {
         height: 32px;
+    }
+    .big-spacer {
+        height: 48px;
     }
 </style>

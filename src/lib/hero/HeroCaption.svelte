@@ -24,24 +24,11 @@
 
         font-size: 24px;
         font-weight: bold;
-
-
-        /* Split effect: black before image starts, white over image */
-        background: linear-gradient(
-                to right,
-                var(--color-pale-tan) 0%,
-                var(--color-pale-tan) var(--caption-start),
-                var(--color-terminal-grey) var(--caption-start),
-                var(--color-terminal-grey) 100%
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .bg {
         position: absolute;
-        transform: translate(175px, 0px);
+        transform: translate(165px, 0px);
         z-index: -1;
 
         font-size: 24px;

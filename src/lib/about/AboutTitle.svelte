@@ -20,7 +20,7 @@
 
     .title-text {
         position: absolute;
-        transform: translate(calc(-1 * var(--about-title-start)), -4px);
+        transform: translate(calc(-0 * var(--about-title-start)), -4px);
 
         font-family: "Anton", sans-serif;
         line-height: 1.0;
@@ -47,7 +47,8 @@
         background: var(--color-terminal-grey);
         height: 55px;
         width: calc(var(--about-width) - var(--about-title-start));
-        margin: 0;
+        margin-left: var(--about-title-start);
+        /*margin: 0;*/
         display: flex;
     }
     
