@@ -19,6 +19,7 @@
         text-align: right;
         margin-right: 8px;
 
+        color: var(--color-terminal-grey);
         font-size: 24px;
         font-weight: bold;
     }

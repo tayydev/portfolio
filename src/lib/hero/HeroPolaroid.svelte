@@ -21,16 +21,16 @@
         z-index: 1;
     }
     .window {
-        border: solid 1px var(--color-pale-tan);
+        border: solid 1px var(--color-peach-parchment);
         border-bottom: none;
         height: var(--polaroid-width);
         width: var(--polaroid-width);
     }
     .description {
-        border: solid 1px var(--color-pale-tan);
+        border: solid 1px var(--color-peach-parchment);
         width: var(--polaroid-width);
         background: var(--color-terminal-grey);
-        color: var(--color-pale-tan);
+        color: var(--color-peach-parchment);
         padding: 2px;
 
         font-family: '7Segment', monospace;

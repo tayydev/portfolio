@@ -21,15 +21,15 @@
 :root {
     font-family: 'Fira Mono', monospace;
 
-    --color-pale-tan: #fcd6c5;
-    --color-pale-green: #e5fbe5;
-    --color-link-green: #529c4b;
-    --color-terminal-grey: #151915;
+    --color-peach-parchment: #fcd6c5;
+    --color-pale-green: #e8f1da;
+    --color-link-green: #649e43;
+    --color-terminal-grey: #1e1e1e;
     --color-film-orange: #ff5e00;
 
     margin: 0;
 
-    background-color: var(--color-pale-tan);
+    background-color: var(--color-peach-parchment);
 
     a {
         color: var(--color-link-green);

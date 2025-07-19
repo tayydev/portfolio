@@ -29,7 +29,7 @@
         font-size: 57px; /* Two pixels taller than container */
         text-align: right;
         z-index: 2;
-        color: var(--color-pale-tan);
+        color: var(--color-peach-parchment);
     }
 
     .bg {

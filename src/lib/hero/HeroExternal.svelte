@@ -4,8 +4,12 @@
 </script>
 
 <div class="external">
-    <img src={gh} alt="GitHub Logo" class="icon"/>
-    <img src="{li}" alt="LinkedIn Logo" class="icon"/>
+    <a href="https://github.com/tayydev">
+        <img src={gh} alt="GitHub Logo" class="icon"/>
+    </a>
+    <a href="https://www.linkedin.com/in/southtaylor">
+        <img src="{li}" alt="LinkedIn Logo" class="icon"/>
+    </a>
 </div>
 
 <style>

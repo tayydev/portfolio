@@ -15,7 +15,7 @@
     line-height: 1.125;
     text-align: right;
 
-    color: var(--color-pale-tan)
+    color: var(--color-peach-parchment)
   }
 
 </style>
