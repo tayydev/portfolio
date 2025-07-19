@@ -22,8 +22,8 @@
     font-family: 'Fira Mono', monospace;
 
     --color-peach-parchment: #fcd6c5;
-    --color-pale-green: #e8f1da;
-    --color-link-green: #649e43;
+    --color-sprout-green: #e8f1da;
+    --color-snoot-green: #649e43;
     --color-terminal-grey: #1e1e1e;
     --color-film-orange: #ff5e00;
 
@@ -32,10 +32,10 @@
     background-color: var(--color-peach-parchment);
 
     a {
-        color: var(--color-link-green);
+        color: var(--color-snoot-green);
     }
     a:hover {
-        color: var(--color-link-green);
+        color: var(--color-snoot-green);
     }
 }
 

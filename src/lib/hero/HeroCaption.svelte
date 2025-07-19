@@ -31,7 +31,7 @@
 
         font-size: 24px;
 
-        background: var(--color-pale-green);
+        background: var(--color-sprout-green);
         width: 825px;
     }
 </style>

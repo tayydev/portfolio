@@ -1,8 +1,8 @@
 <main>
     <div class="reset">
         <div class="square" style="background: var(--color-peach-parchment)"></div>
-        <div class="square" style="background: var(--color-pale-green)"></div>
-        <div class="square" style="background: var(--color-link-green)"></div>
+        <div class="square" style="background: var(--color-sprout-green)"></div>
+        <div class="square" style="background: var(--color-snoot-green)"></div>
     </div>
 </main>
 
