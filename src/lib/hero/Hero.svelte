@@ -1,5 +1,5 @@
 <script>
-    import hero from "./hero_reduced.webp"
+    import hero from "./hero_reduced_patched.webp"
     import Center from "$lib/Center.svelte";
     import HeroText from "$lib/hero/HeroText.svelte";
     import HeroPolaroid from "$lib/hero/HeroPolaroid.svelte";
@@ -22,9 +22,6 @@
 </main>
 
 <style>
-    :root {
-        --image-start: 28px;
-    }
     .hero-img {
         max-width: 900px;
         display: block;
@@ -34,7 +31,7 @@
     }
     .hero-overlay-container {
         position: absolute;
-        transform: translate(-28px, 20px);
+        transform: translate(15px, 20px);
         z-index: 1;
     }
 </style>

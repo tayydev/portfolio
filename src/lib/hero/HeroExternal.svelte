@@ -1,6 +1,11 @@
+<script>
+    import gh from "./github_logo_tan.svg"
+    import li from "./linkedin_logo_tan_smaller.svg"
+</script>
+
 <div class="external">
-    <div class="icon"/>
-    <div class="icon"/>
+    <img src={gh} alt="GitHub Logo" class="icon"/>
+    <img src="{li}" alt="LinkedIn Logo" class="icon"/>
 </div>
 
 <style>
@@ -10,10 +15,9 @@
         display: flex;
         gap: 16px;
         justify-content: right;
-        margin-right: 16px;
+        margin-right: 6px;
     }
     .icon {
-        background: var(--color-pale-tan);
         width: 50px;
         height: 50px;
         z-index: 2;
