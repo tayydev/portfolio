@@ -27,4 +27,7 @@
         z-index: 2;
         margin-right: 0;
     }
+    a {
+        background: none;
+    }
 </style>

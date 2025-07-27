@@ -4,7 +4,6 @@
     import About from "$lib/about/About.svelte";
 </script>
 
-<div class="spacer"/>
 <Hero/>
 <div class="big-spacer"/>
 <About/>

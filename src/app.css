@@ -31,10 +31,15 @@
 
     background-color: var(--color-peach-parchment);
 
-    a {
-        color: var(--color-snoot-green);
+    a, a:visited {
+        background-color: var(--color-terminal-grey);
     }
-    a:hover {
+
+    a {
+        color: var(--color-sprout-green);
+    }
+
+    a:visited {
         color: var(--color-snoot-green);
     }
 }
