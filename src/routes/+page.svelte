@@ -4,6 +4,10 @@
     import Center from "$lib/Center.svelte";
 </script>
 
+<svelte:head>
+    <title>Taylor South - about</title>
+</svelte:head>
+
 <main>
     <Hero/>
     <div class="big-spacer"></div>

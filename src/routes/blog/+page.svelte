@@ -8,6 +8,10 @@
     </Center>
 </div>
 
+<svelte:head>
+    <title>Taylor South - blog</title>
+</svelte:head>
+
 <style>
     .page {
         display: grid;

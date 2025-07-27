@@ -8,6 +8,10 @@ import Center from "$lib/Center.svelte";
     </Center>
 </div>
 
+<svelte:head>
+    <title>Taylor South - portfolio</title>
+</svelte:head>
+
 <style>
     .page {
         display: grid;
