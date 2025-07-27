@@ -1,9 +1,13 @@
 <script>
+    import { page } from '$app/state';
 </script>
 
 <div class="header">
-    <a href="/">about</a>
-        <a href="/blog">blog</a>
+    <a href="/" class:active={page.url.pathname === '/'}>about</a>
+    •
+    <a href="/blog" class:active={page.url.pathname === '/blog'}>blog</a>
+    •
+    <a href="/projects" class:active={page.url.pathname === '/projects'}>projects</a>
 </div>
 
 <style lang="css">
@@ -19,5 +23,8 @@
         padding: 1px;
         background: none;
         font-weight: bold;
+    }
+    a.active {
+        text-decoration: underline;
     }
 </style>
