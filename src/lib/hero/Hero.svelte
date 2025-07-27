@@ -23,8 +23,10 @@
 
 <style>
     .hero-img {
-        max-width: 900px;
+        width: 900px;
+        height: 506px;
         display: block;
+        background-color: var(--color-ocean-blue);
     }
     .hero-container {
         display: block;

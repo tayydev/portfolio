@@ -7,7 +7,3 @@
     <Header/>
     <slot/>
 </main>
-
-<style>
-
-</style>

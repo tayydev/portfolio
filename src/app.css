@@ -26,6 +26,7 @@
     --color-snoot-green: #649e43;
     --color-terminal-grey: #1e1e1e;
     --color-film-orange: #ff5e00;
+    --color-ocean-blue: #003366;
 
     margin: 0;
 
@@ -41,6 +42,14 @@
 
     a:visited {
         color: var(--color-snoot-green);
+    }
+
+    --content-width: 600px;
+
+    .content {
+        display: block;
+        max-width: var(--content-width);
+        margin-top: 10px;
     }
 }
 

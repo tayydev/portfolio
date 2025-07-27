@@ -37,7 +37,7 @@
     .bg {
         background: var(--color-terminal-grey);
         height: 55px;
-        width: calc(var(--about-width) - var(--about-title-start));
+        width: calc(var(--content-width) - var(--about-title-start));
         display: flex;
     }
 
