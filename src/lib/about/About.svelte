@@ -7,7 +7,7 @@
     <Center>
         <AboutTitle/>
         <div class="content">
-            Hello, my name is Taylor (she/her). I'm a software engineer based in Northern Virginia. I work across the full stack, but have a particular affinity for Rust and Kotlin. In my free time you'll find me sport climbing, taking pictures, and wandering the world after dark.
+            Hello, my name is Taylor (she/her). I'm a software engineer based in Washington, DC. I work across the full stack, but have a particular affinity for Rust and Kotlin. In my free time you'll find me sport climbing, taking pictures, and wandering the world after dark.
         </div>
     </Center>
 </div>
