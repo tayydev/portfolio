@@ -1,10 +1,12 @@
 <script>
     import Pallete from "$lib/Pallete.svelte";
+
+    export let text = "ABOUT";
 </script>
 
 <div class="about-container">
     <div class="title-text">
-        ABOUT
+        {text}
     </div>
     <div class="bg">
         &nbsp;

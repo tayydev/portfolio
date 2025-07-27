@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <main>
     <div class="polaroid">
         <div class="window">
@@ -21,16 +24,16 @@
         z-index: 1;
     }
     .window {
-        border: solid 1px var(--color-peach-parchment);
+        border: solid 1px var(--color-snoot-green);
         border-bottom: none;
         height: var(--polaroid-width);
         width: var(--polaroid-width);
     }
     .description {
-        border: solid 1px var(--color-peach-parchment);
+        border: solid 1px var(--color-snoot-green);
         width: var(--polaroid-width);
         background: var(--color-terminal-grey);
-        color: var(--color-peach-parchment);
+        color: var(--color-snoot-green);
         padding: 2px;
 
         font-family: '7Segment', monospace;
