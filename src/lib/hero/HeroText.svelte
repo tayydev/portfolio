@@ -18,4 +18,19 @@
     color: var(--color-peach-parchment)
   }
 
+  /* Mobile responsive styles */
+  @media (max-width: 1024px) {
+    .image-text-container {
+      text-align: center;
+      line-height: 1.0;
+      width: var(--content-width);
+      background: var(--color-terminal-grey);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .image-text-container {
+      font-size: 121px;
+    }
+  }
 </style>

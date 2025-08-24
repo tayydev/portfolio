@@ -45,4 +45,11 @@
     .expand {
         margin: auto;
     }
+
+    /* Hide polaroid on mobile since we have the frame around the image */
+    @media (max-width: 1024px) {
+        .polaroid {
+            display: none;
+        }
+    }
 </style>

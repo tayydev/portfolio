@@ -4,10 +4,10 @@
 </script>
 
 <div class="external">
-    <a href="https://github.com/tayydev">
+    <a class="icon" href="https://github.com/tayydev">
         <img src={gh} alt="GitHub Logo" class="icon"/>
     </a>
-    <a href="https://www.linkedin.com/in/southtaylor">
+    <a class="icon" href="https://www.linkedin.com/in/southtaylor">
         <img src="{li}" alt="LinkedIn Logo" class="icon"/>
     </a>
 </div>
@@ -30,4 +30,17 @@
     a {
         background: none;
     }
+
+    /* Mobile responsive styles */
+    @media (max-width: 1024px) {
+        .external {
+            justify-content: center;
+            margin: 0 0 0 0;
+            background: var(--color-terminal-grey);
+            padding: 5px;
+            gap: 5px;
+            width: var(--content-width);
+        }
+    }
+
 </style>

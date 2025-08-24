@@ -46,6 +46,14 @@
 
     --content-width: 600px;
 
+    @media (max-width: 1024px) {
+        --content-width: 475px;
+    }
+
+    @media (max-width: 640px) {
+        --content-width: 350px;
+    }
+
     .content {
         display: block;
         max-width: var(--content-width);
