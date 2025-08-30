@@ -10,7 +10,8 @@
 
 <main>
     <Hero/>
-    <div class="big-spacer"></div>
+    <div class="little-spacer"></div>
+    <div class="little-spacer mobile-hide"></div>
     <About/>
     <div class="big-spacer"></div>
     <Center>
@@ -22,5 +23,15 @@
 <style>
     .big-spacer {
         height: 48px;
+    }
+
+    .little-spacer {
+        height: 12px;
+    }
+
+    @media (max-width: 1024px) {
+        .mobile-hide {
+            display: none;
+        }
     }
 </style>

@@ -11,7 +11,9 @@
     <div class="bg">
         &nbsp;
         <div class="expand"/>
-        <Pallete/>
+        <div class="thin-mobile-hide">
+            <Pallete/>
+        </div>
     </div>
 </div>
 
@@ -46,5 +48,11 @@
     }
     .expand {
         margin: auto;
+    }
+
+    @media (max-width: 375px) {
+        .thin-mobile-hide {
+            display: none;
+        }
     }
 </style>

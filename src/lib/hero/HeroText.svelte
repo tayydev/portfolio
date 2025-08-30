@@ -33,4 +33,10 @@
       font-size: 121px;
     }
   }
+
+  @media (max-width: 375px) {
+    .image-text-container {
+      font-size: 100px;
+    }
+  }
 </style>

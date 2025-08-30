@@ -54,6 +54,10 @@
         --content-width: 350px;
     }
 
+    @media (max-width: 375px) {
+        --content-width: 300px;
+    }
+
     .content {
         display: block;
         max-width: var(--content-width);

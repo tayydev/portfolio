@@ -1,7 +1,15 @@
+<script>
+</script>
+
 <div class="image-text-container">
     <div class="bg">&nbsp;</div>
     <div class="caption">
         Software Engineer
+        <div class="external">
+            <a href="https://github.com/tayydev">github</a>
+            •
+            <a href="https://www.linkedin.com/in/southtaylor/">linkedin</a>
+        </div>
     </div>
 </div>
 
@@ -34,34 +42,43 @@
         background: var(--color-sprout-green);
         width: 825px;
     }
-    
+
+    .external {
+        display: none;
+    }
+
     /* Mobile responsive styles */
     @media (max-width: 1024px) {
         .image-text-container {
-            margin-top: 0;
             width: 100%;
-            max-width: 300px;
+            max-width: var(--content-width);
+            background: var(--color-sprout-green);
         }
-        
+
         .caption {
             margin: 0;
             text-align: center;
-            font-size: 18px;
-            padding: 4px 12px;
+            font-size: 36px;
+            padding: 4px;
             position: relative;
             z-index: 1;
-        }
-        
-        .bg {
-            position: absolute;
-            transform: none;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
             width: 100%;
-            height: 100%;
+        }
+
+        .bg {
+            display: none;
+        }
+
+        .external {
+            display: flex;
+            gap: 4px;
+            font-size: 24px;
+            font-weight: normal;
+            padding: 8px;
+
+            justify-content: center;
+            align-items: center;
         }
     }
-    
+
 </style>

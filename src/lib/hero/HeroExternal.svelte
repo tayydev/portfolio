@@ -34,12 +34,7 @@
     /* Mobile responsive styles */
     @media (max-width: 1024px) {
         .external {
-            justify-content: center;
-            margin: 0 0 0 0;
-            background: var(--color-terminal-grey);
-            padding: 5px;
-            gap: 5px;
-            width: var(--content-width);
+            display: none;
         }
     }
 
