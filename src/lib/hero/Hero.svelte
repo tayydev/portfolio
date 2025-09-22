@@ -80,7 +80,7 @@
 
     .hero-img-mobile {
         object-fit: cover;
-        object-position: center;
+        object-position: 70% center;
         display: block;
         background-color: var(--color-ocean-blue);
     }
