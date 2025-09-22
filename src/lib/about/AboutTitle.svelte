@@ -24,7 +24,8 @@
 
     .title-text {
         position: absolute;
-        transform: translate(0px, -1.5px);
+        top: 45%;
+        transform: translateY(-50%);
 
         padding-left: 16px;
 
