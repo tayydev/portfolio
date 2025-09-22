@@ -5,9 +5,9 @@
 <div class="header">
     <a href="/" class:active={page.url.pathname === '/'}>about</a>
     •
-    <a href="/portfolio" class:active={page.url.pathname === '/portfolio'}>portfolio</a>
+    <a href="/portfolio" class:active={page.url.pathname === '/portfolio/'}>portfolio</a>
     •
-    <a href="/blog" class:active={page.url.pathname === '/blog'}>blog</a>
+    <a href="/blog" class:active={page.url.pathname === '/blog/'}>blog</a>
 </div>
 
 <style lang="css">
