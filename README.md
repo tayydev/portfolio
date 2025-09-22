@@ -1,4 +1,2 @@
-# [esouth.dev](https://esouth.dev)
-My portfolio website :)
-
-Built with NextJS and MUI
+# Professional Website
+https://tsouth.dev

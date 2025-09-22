@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('/fonts/FiraMono.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'AntonCrop';
+    src: url('/fonts/AntonCrop.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('/fonts/Anton.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '7Segment';
+    src: url('/fonts/7segment.ttf') format('truetype');
+}
+
+:root {
+    font-family: 'Fira Mono', monospace;
+
+    --color-peach-parchment: #fcd6c5;
+    --color-sprout-green: #e8f1da;
+    --color-snoot-green: #649e43;
+    --color-terminal-grey: #1e1e1e;
+    --color-film-orange: #ff5e00;
+    --color-ocean-blue: #003366;
+
+    margin: 0;
+
+    background-color: var(--color-peach-parchment);
+
+    a, a:visited {
+        background-color: var(--color-terminal-grey);
+    }
+
+    a {
+        color: var(--color-sprout-green);
+    }
+
+    a:visited {
+        color: var(--color-snoot-green);
+    }
+
+    --content-width: 600px;
+
+    @media (max-width: 1024px) {
+        --content-width: 475px;
+    }
+
+    @media (max-width: 640px) {
+        --content-width: 350px;
+    }
+
+    @media (max-width: 375px) {
+        --content-width: 300px;
+    }
+
+    .content {
+        display: block;
+        max-width: var(--content-width);
+        margin-top: 10px;
+    }
+}
+
+/* Resets (https://www.digitalocean.com/community/tutorials/css-minimal-css-reset): */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
