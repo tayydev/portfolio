@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Fira Mono';
-    src: url('fonts/FiraMono.woff2') format('woff');
+    src: url('/fonts/FiraMono.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'AntonCrop';
-    src: url('fonts/AntonCrop.ttf') format('truetype');
+    src: url('/fonts/AntonCrop.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Anton';
-    src: url('fonts/Anton.ttf') format('truetype');
+    src: url('/fonts/Anton.ttf') format('truetype');
 }
 
 @font-face {
     font-family: '7Segment';
-    src: url('fonts/7segment.ttf') format('truetype');
+    src: url('/fonts/7segment.ttf') format('truetype');
 }
 
 :root {
