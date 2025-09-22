@@ -24,7 +24,7 @@
 
     .title-text {
         position: absolute;
-        top: 45%;
+        top: 45%; /* Default to Windows/non-WebKit behavior */
         transform: translateY(-50%);
 
         padding-left: 16px;
@@ -35,6 +35,13 @@
         text-align: right;
         z-index: 2;
         color: var(--color-peach-parchment);
+    }
+
+    /* macOS-only detection: system fonts that only exist on macOS */
+    @supports (font-family: system-ui) and (-webkit-touch-callout: none) and (color: -webkit-link) {
+        .title-text {
+            top: 47.5%;
+        }
     }
 
     .bg {
