@@ -1,11 +1,15 @@
 <script>
     import Pallete from "$lib/Pallete.svelte";
+    import { browser } from '$app/environment';
 
     export let text = "ABOUT";
+    //Sad pathetic deprecated javascript check so windows font rendering is
+    // correctly offset
+    const isWindows = browser && /Win/.test(navigator.platform);
 </script>
 
 <div class="about-container">
-    <div class="title-text">
+    <div class="title-text" class:windows={isWindows}>
         {text}
     </div>
     <div class="bg">
@@ -24,7 +28,7 @@
 
     .title-text {
         position: absolute;
-        top: 45%; /* Default to Windows/non-WebKit behavior */
+        top: 47.5%; /* Default to macOS behavior */
         transform: translateY(-50%);
 
         padding-left: 16px;
@@ -37,11 +41,8 @@
         color: var(--color-peach-parchment);
     }
 
-    /* macOS-only detection: system fonts that only exist on macOS */
-    @supports (font-family: system-ui) and (-webkit-touch-callout: none) and (color: -webkit-link) {
-        .title-text {
-            top: 47.5%;
-        }
+    .title-text.windows {
+        top: 45%;
     }
 
     .bg {
